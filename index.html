@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - O Brasa Forte 🔥</title>
+    <style>
+        :root {
+            --primary-color: #b91c1c;
+            --secondary-color: #78350f;
+            --bg-color: #fcfaf8;
+            --card-bg: #ffffff;
+            --text-color: #1f2937;
+            --accent-color: #d97706;
+            --vegan-color: #15803d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #f3f4f6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .category {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .category h2 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 10px;
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+        }
+
+        .menu-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-info h3 {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 3px;
+        }
+
+        .item-info p {
+            font-size: 0.95rem;
+            color: #6b7280;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>O Brasa Forte</h1>
+            <p>O melhor churrasco e petiscos para todos os gostos. Na brasa com paixão!</p>
+        </header>
+
+        <!-- Seção de Carnes e Espetinhos -->
+        <section class="category">
+            <h2>🥩 Carnes & Espetinhos</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Espetinho de Carne</h3>
+                    <p>Cortes selecionados de carne bovina, suculentos e grelhados no ponto certo.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Coração de Galinha na Brasa</h3>
+                    <p>Temperado no alho, limão e shoyu, espetado com capricho.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Salsichão Artesanal</h3>
+                    <p>Espetinho de salsichão dourado na brasa com crosta crocante.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Vegana -->
+        <section class="category" style="border-left-color: var(--vegan-color);">
+            <h2>🌱 Opções Veganas na Brasa</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Espetinho de Legumes Grelhados</h3>
+                    <p>Abobrinha, pimentões coloridos, cebola roxa e tomate cereja.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Acompanhamentos -->
+        <section class="category" style="border-left-color: var(--accent-color);">
+            <h2>🥗 Acompanhamentos & Molhos</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Pão de Alho Especial 🧄</h3>
+                    <p>Recheado com pasta de alho artesanal cremosa e queijo gratinado na brasa.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Vinagrete Tradicional da Casa</h3>
+                    <p>Tomate fresco, cebola, pimentão picadinhos, azeite e vinagre.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Maionese da Casa</h3>
+                    <p>Batatas selecionadas, cenoura, ervilhas frescas e maionese artesanal.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Salada de Batata à Bolonhesa</h3>
+                    <p>Batatas cozidas com toque especial, molho à bolonhesa encorpado e ervas finas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Bebidas -->
+        <section class="category" style="border-left-color: var(--secondary-color);">
+            <h2> 🥤 Bebidas Geladas</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Coca-Cola (Lata 350ml / 2L)</h3>
+                    <p>Gelada para acompanhar o churrasco.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Chá Gelado da Casa (500ml)</h3>
+                    <p>Chá preto ou verde gelado com limão e hortelã.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Água Mineral com/sem Gás (500ml)</h3>
+                    <p>Gelada ou natural.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 O Brasa Forte. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
